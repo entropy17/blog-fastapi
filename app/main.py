@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, status, Response, HTTPException
 
-from . import schemas, models
+from blog import schemas, models
 from blog.database import engine
 from blog.routers import blog, user, login
 
